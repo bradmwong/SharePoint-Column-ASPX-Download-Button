@@ -1,0 +1,48 @@
+{
+    "$schema": "https://developer.microsoft.com/json-schemas/sp/v2/column-formatting.schema.json",
+    "elmType": "div",
+    "style": {
+        "display": "flex",
+        "justify-content": "center",
+        "align-items": "center",
+        "margin": "2px 0px",
+        "width": "102px"
+    },
+    "children": [
+        {
+            "elmType": "button",
+            "style": {
+                "width": "100%",
+                "height": "32px",
+                "padding": "0px",
+                "margin": "5px 0px",
+                "border": "none",
+                "border-radius": "0",
+                "font-size": "14px",
+                "font-weight": "400",
+                "visibility": "=if([$File_x0020_Type] == '', 'hidden', 'visible')"
+            },
+            "attributes": {
+                "class": "ms-bgColor-themePrimary"
+            },
+            "children": [
+                {
+                    "elmType": "a",
+                    "txtContent": "Download",
+                    "style": {
+                        "text-decoration": "none",
+                        "padding": "0px 0px",
+                        "width": "100%"
+                    },
+                    "attributes": {
+                        "href": "= @currentWeb + '/_layouts/15/download.aspx?UniqueId=' + [$UniqueId]",
+                        "target": "_blank",
+                        "class": "ms-fontColor-white"
+                    }
+                }
+            ]
+        }
+    ]
+}
+
+
