@@ -19,7 +19,7 @@
                 "visibility": "=if([$File_x0020_Type] == '', 'hidden', 'visible')"
             },
             "attributes": {
-            "class": "ms-bgColor-themePrimary"
+                "class": "ms-bgColor-themePrimary ms-bgColor-themeDark--hover"
             },
             "children": [
                 {
@@ -28,7 +28,6 @@
                         "text-decoration": "none",
                         "padding": "10px 0px",
                         "width": "100%",
-                        "fontColor": "fff",
                         "font-weight": "400"
                     },
                     "attributes": {
